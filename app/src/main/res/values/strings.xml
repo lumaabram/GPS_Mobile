@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prova PDM</string>
+    <string name="button_gnss">GNSS</string>
+    <string name="button_atividade2">Atividade 2</string>
+    <string name="button_atividade3">Atividade 3</string>
+    <string name="satellite_filter_title">Filtros de Satélites</string>
+    <string name="satellite_filter_message">Selecione os tipos de satélites que deseja visualizar:</string>
+    <string name="gps_filter">GPS</string>
+    <string name="galileo_filter">Galileo</string>
+    <string name="glonass_filter">GLONASS</string>
+    <string name="used_in_fix_filter">Usado em Fix</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="gnss_signal_quality_title">Qualidade do Sinal GNSS</string>
+    <string name="satellite_id">ID:</string>
+    <string name="constellation">Constelação:</string>
+    <string name="used">Usado:</string>
+    <string name="not_used">Não usado</string>
+    <string name="choose_format_title">Escolha o formato para coordenadas:</string>
+    <string name="location_permission_denied">Sem permissão para acessar o sistema de posicionamento</string>
+    <string name="location_data_title">Dados da Última posição</string>
+    <string name="location_not_available">Localização Não disponível</string>
+</resources>

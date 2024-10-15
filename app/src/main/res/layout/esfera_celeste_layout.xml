@@ -1,0 +1,61 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GNSSA">
+
+    <TextView
+        android:id="@+id/textviewLocation_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Localização"
+        android:textSize="16sp"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rumoView_id"/>
+
+    <com.example.provapdm.RumoView
+        android:id="@+id/rumoView_id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toTopOf="@id/textviewLocation_id"
+        app:layout_constraintStart_toEndOf="@id/textviewLocation_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.example.provapdm.EsferaCelesteView
+        android:id="@+id/esferacelesteview_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textviewLocation_id"
+        app:layout_constraintBottom_toTopOf="@id/QualidadeSateliteView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.example.provapdm.QualidadeSateliteView
+        android:id="@+id/QualidadeSateliteView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/esferacelesteview_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textviewGnss_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dados GNSS"
+        android:textSize="16sp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/QualidadeSateliteView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
